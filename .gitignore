@@ -3,4 +3,7 @@
 
 #python
 .venv
-venvы
+venv
+
+__pycache__/
+*.pyc
