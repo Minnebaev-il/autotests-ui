@@ -4,7 +4,7 @@ from playwright.sync_api import Page, expect
 
 @pytest.mark.regression
 @pytest.mark.courses
-def test_empty_courses_list(chromium_page_with_state: Page):
+def test_empty_courses_list(chromium_page_with_state):
     page = chromium_page_with_state
 
     page.goto('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses')
