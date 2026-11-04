@@ -7,8 +7,8 @@ from playwright.sync_api import expect, Page
 @pytest.mark.parametrize(
     'email, password', [
         pytest.param("user.name@gmail.com", "password"),
-    pytest.param("user.name@gmail.com", "  "),
-    pytest.param("  ", "password")
+        pytest.param("user.name@gmail.com", "  "),
+        pytest.param("  ", "password")
     ]
 )
 def test_wrong_email_or_password_authorization(chromium_page: Page, email: str, password: str):
